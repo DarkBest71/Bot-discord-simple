@@ -1,5 +1,5 @@
 # Bot-discord-simple
-Création d'un bot discord en .js
+Création d'un bot discord en .js 
 
 # création d'un dossier sur votre bureau pour votre bote:
 
