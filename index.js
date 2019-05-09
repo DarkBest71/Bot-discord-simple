@@ -5,19 +5,19 @@ const prefix = "!";
 client.login(token);
 
 //Active le bot dans la console CMD comme suite (node index)
-client.on('ready', () =>{
-console.log('Je suis pret :) ');
-});
-
-message.author.send('Actuellement connecté ! : ')
-.then(m =>{
-client.guilds.map(g =>{
-mesage.author.send('\n' + g.name + ''); 
-});
-})
-.catch(err =>{
-console.log(err);
-});
+client.on("ready", () => {
+    var memberCount = client.users.size;
+    var servercount = client.guilds.size;  
+    var channel = client.channels.size;
+    //sur quel nom de serveur se trouve le bot.
+    var servers = client.guilds.array().map(g => g.name).join(',');
+    //retournement d'information sur la console CMD
+    console.log('---------------------------------------------');
+    console.log('---------------------------------------------');
+    console.log('[!]Connexion en cours.......... \n[!]Veuillez Patienté !!! \n[!]Tous les évenement sont après !!!   \n[!]Les préfix actuelle:  ' + prefix + '\n[!]Mentions de votre ID actuel = ' + mention + '\n[!]Nombre de membres: ' + memberCount + "\n[!]Nombre de serveurs: " + servercount + "\n[!]Nombre de canaux: " + channel);
+    console.log('---------------------------------------------');
+    console.log('---------------------------------------------');
+    });
 
 //le bot annonce qui c'est connecté dans le salon général
 client.on('guildMemberAdd', member => {
