@@ -16,7 +16,7 @@ Cliquez sur "Enregistrer" en bas à droite.
 Revenez sur l'explorateur de fichiers. 
 Vous remarquerez qu'il existe désormais deux fichiers dans votre dossier:
 
-Supprimez le fichier "index.txt/index"
+Supprimez le fichier "index.txt/index" .
 Appuyer sur les touches Windows + R. Une fenêtre s'ouvrira.
 
 Dans la barre de saisie, tapez "cmd". Encore une fois, une fenêtre s'ouvrira.
