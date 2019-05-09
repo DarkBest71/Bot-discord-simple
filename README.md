@@ -82,17 +82,4 @@ Ligne 8 : On donne la valeur client.guilds.size à la valeur prefix. Ce nom de v
 Ligne 9 : On change le jeu du robot par la valeur Connecté - "+TailleServeurs+" serveur(s) et "+TailleMembres+" membre(s). Le jeu peut donc changer en fonction de la présence du robot sur les serveurs. Pour ma part, ça donne ça:
 
 
-
-
 Suite de l'aprentissage de c'est base trés prochainement , cela sera mis a jour.
-
-
-
-
-
-
-
-
-
-
-Rendez-vous dans le dossier du plugin mail, puis dans le fichier mail.prop ouvrez le.
