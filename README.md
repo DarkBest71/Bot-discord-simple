@@ -1,7 +1,7 @@
 # Bot-discord-simple
 Création d'un bot discord en .js 
 
-# création d'un dossier sur votre bureau pour votre bote:
+# création d'un dossier sur votre bureau pour votre bote: 
 
 Créer votre dossier de votre bot sur votre bureau.
 Créez un dossier du nom de votre choix pour votre bot, Il ne doit pas pas comporter d'espace ou caractére bizarre.
