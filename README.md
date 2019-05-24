@@ -1,3 +1,9 @@
+#Pour me suivre.
+Pour me suivre sur Discord: discord.gg/EJ3RDnJ
+Sur YouTube: https://www.youtube.com/c/DarkBest
+Sur Twitch: https://www.twitch.tv/darkbestplayer
+Pour me soutenir en regardant des vidéo de quelque secondes: https://utip.io/darkbest03
+
 # Bot-discord-simple
 Création d'un bot discord en .js 
 
