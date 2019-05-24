@@ -1,5 +1,5 @@
 # Pour me suivre.
-Pour me suivre sur Discord: discord.gg/EJ3RDnJ
+Pour me suivre sur Discord: https://discord.gg/EJ3RDnJ
 
 Sur YouTube: https://www.youtube.com/c/DarkBest
 
