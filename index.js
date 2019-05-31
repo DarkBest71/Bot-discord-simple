@@ -1,23 +1,38 @@
-const discord = require('discord.js'), 
-client = new discord.Client();
-const token = "votre Token de votre bot";
-const prefix = "!";
-client.login(token);
+'use strict';
+const Discord = require("discord.js");//on appele le fichier discord.js pour que le bot fonctionne
+const client = new Discord.Client();
+const token = "Votre clé Token ici";//token de votre bot
+var prefix = "!";//votre prefix choisir se que vous voulez cela appelra vos commandes
+var mention = "votre id ici";// votre ID d'utilisateur exemple <@3485477477265>
+var memberCount = client.users.size;//permet de savoir combien de membre qui et avec le bot sur le serveur
+var servercount = client.guilds.size;//permet de savoir sur combien de serveur se trouve le bot
+var channel = client.channels.size;//Permet de savoir sur combien de channel se trouve le bot
 
-//Active le bot dans la console CMD comme suite (node index)
+//initialisation du bot pour voir les log
 client.on("ready", () => {
-    var memberCount = client.users.size;
-    var servercount = client.guilds.size;  
-    var channel = client.channels.size;
-    //sur quel nom de serveur se trouve le bot.
-    var servers = client.guilds.array().map(g => g.name).join(',');
-    //retournement d'information sur la console CMD
-    console.log('---------------------------------------------');
-    console.log('---------------------------------------------');
-    console.log('[!]Connexion en cours.......... \n[!]Veuillez Patienté !!! \n[!]Tous les évenement sont après !!!   \n[!]Les préfix actuelle:  ' + prefix + '\n[!]Mentions de votre ID actuel = ' + mention + '\n[!]Nombre de membres: ' + memberCount + "\n[!]Nombre de serveurs: " + servercount + "\n[!]Nombre de canaux: " + channel);
-    console.log('---------------------------------------------');
-    console.log('---------------------------------------------');
-    });
+//permet de savoir les nom des serveur se trouve le bot
+var servers = client.guilds.array().map(g => g.name).join(',');
+var memberCount = client.users.size;//permet de savoir combien de membre qui et avec le bot sur le serveur
+var servercount = client.guilds.size;//permet de savoir sur combien de serveur se trouve le bot
+var channel = client.channels.size;//Permet de savoir sur combien de channel se trouve le bot
+console.log("--------------------------------------");
+console.log('[!]Connexion en cours.......... \n[!]Veuillez Patienté !!! \n[!]Tous les évenement sont après !!!   \n[!]Les préfix actuelle:  ' + prefix + '\n[!]Mentions de votre ID actuel = ' + mention + '\n[!]Nombre de membres: ' + memberCount + "\n[!]Nombre de serveurs: " + servercount + "\n[!]Nombre de canaux: " + channel);
+});
+    
+client.on('message', message => {
+const msgc = message.content;	
+if (msgc === "!star" &&message.guild) { //effectuer son prefix de la commande
+message.delete(0);     
+var memberCount = client.users.size;//permet de savoir combien de membre qui et avec le bot sur le serveur
+var servercount = client.guilds.size;//permet de savoir sur combien de serveur se trouve le bot
+var channel = client.channels.size;//Permet de savoir sur combien de channel se trouve le bot
+let m = " ";
+m += 'je suis en compagnie de '+ memberCount +' membres \n';
+m += 'je suis présent dans '+ servercount+' serveurs \n';
+m += 'je suis sur '+ channel+' canaux \n';
+message.author.send(m).catch(console.log)
+message.reply("La commande star vous a été envoyé en privé :100: ")
+});
 
 //le bot annonce qui c'est connecté dans le salon général
 client.on('guildMemberAdd', member => {
