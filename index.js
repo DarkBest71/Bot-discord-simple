@@ -1,4 +1,4 @@
-const discord = require('discord.js'),
+const discord = require('discord.js'), 
 client = new discord.Client();
 const token = "votre Token de votre bot";
 const prefix = "!";
